@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29FDDE7A-AB39-47AF-A69C-FB0632CAD594</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Grapevine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4C646E5F-55CA-4286-9637-86519CBF919A</key>
+		<string>https://github.com/Jolix/grapevine.git</string>
+		<key>63A4DF99-AEA8-4B45-8334-499400EEB38D</key>
+		<string>https://junglecat-org.svn.beanstalkapp.com/junglecat/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/osx/Grapevine.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4C646E5F-55CA-4286-9637-86519CBF919A</key>
+		<string>../../../..</string>
+		<key>63A4DF99-AEA8-4B45-8334-499400EEB38D</key>
+		<string>../../../../../../../junglecat/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>63A4DF99-AEA8-4B45-8334-499400EEB38D</key>
+		<string>https://junglecat-org.svn.beanstalkapp.com/junglecat</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Jolix/grapevine.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4C646E5F-55CA-4286-9637-86519CBF919A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4C646E5F-55CA-4286-9637-86519CBF919A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>grapevine</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>63A4DF99-AEA8-4B45-8334-499400EEB38D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>trunk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

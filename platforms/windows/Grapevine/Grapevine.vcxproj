@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFD5D85E-249B-47DC-B5C6-1E388FF2739F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Grapevine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Julian Workstation\Documents\GitHub\grapevine\platforms\windows\Win32++\include;..\..\..\include;..\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\bin\msvc-11.0\debug\address-model-32\link-static\runtime-link-static\threading-multi;C:\OpenSSL-Win32\lib\VC\static;..\..\..\deps\boost\bin.v2\libs\system\build\msvc-11.0\debug\address-model-32\link-static\runtime-link-static\threading-multi;..\..\..\\deps\platforms\windows\packet7\database\lib\win32\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\..\..\bin\msvc-11.0\release\address-model-32\link-static\runtime-link-static\threading-multi;C:\OpenSSL-Win32\lib\VC\static;..\..\..\deps\boost\bin.v2\libs\system\build\msvc-11.0\release\address-model-32\link-static\runtime-link-static\threading-multi;..\..\..\\deps\platforms\windows\packet7\database\lib\win32\release;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Julian Workstation\Documents\GitHub\grapevine\platforms\windows\Win32++\include;..\..\..\include;..\boost;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libeay32MTd.lib;ssleay32MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libeay32MT.lib;ssleay32MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Grapevine.h" />
+    <ClInclude Include="GVBitmapCache.h" />
+    <ClInclude Include="GVButton.h" />
+    <ClInclude Include="GVComposeWnd.h" />
+    <ClInclude Include="GVEditProfileWnd.h" />
+    <ClInclude Include="GVMessageWnd.h" />
+    <ClInclude Include="GVOptionsNetworkPropPage.h" />
+    <ClInclude Include="GVProfileCache.h" />
+    <ClInclude Include="GVRegistry.h" />
+    <ClInclude Include="GVSearchWnd.h" />
+    <ClInclude Include="GVSignUpWnd.h" />
+    <ClInclude Include="GVStack.h" />
+    <ClInclude Include="GVSearchListBox.h" />
+    <ClInclude Include="GVTimelineWnd.h" />
+    <ClInclude Include="GVTrayWnd.h" />
+    <ClInclude Include="GVUserProfileWnd.h" />
+    <ClInclude Include="GVUtility.h" />
+    <ClInclude Include="GVWinApp.h" />
+    <ClInclude Include="GVGdiPlusBitmap.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Grapevine.cpp" />
+    <ClCompile Include="GVComposeWnd.cpp" />
+    <ClCompile Include="GVEditProfileWnd.cpp" />
+    <ClCompile Include="GVMessageWnd.cpp" />
+    <ClCompile Include="GVOptionsNetworkPropPage.cpp" />
+    <ClCompile Include="GVRegistry.cpp" />
+    <ClCompile Include="GVSearchWnd.cpp" />
+    <ClCompile Include="GVSignUpWnd.cpp" />
+    <ClCompile Include="GVStack.cpp" />
+    <ClCompile Include="GVSearchListBox.cpp" />
+    <ClCompile Include="GVTimelineWnd.cpp" />
+    <ClCompile Include="GVTrayWnd.cpp" />
+    <ClCompile Include="GVUserProfileWnd.cpp" />
+    <ClCompile Include="GVWinApp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Grapevine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Avatar.jpg" />
+    <Image Include="bitmap1.bmp" />
+    <Image Include="bmp00001.bmp" />
+    <Image Include="DefaultAvatar.jpg" />
+    <Image Include="DefaultAvatar.png" />
+    <Image Include="DefaultAvatar2.png" />
+    <Image Include="DefaultAvatar3.png" />
+    <Image Include="EditProfile.png" />
+    <Image Include="Grapevine.ico" />
+    <Image Include="icon1.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jpg2.bin" />
+    <None Include="rt_manif.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
